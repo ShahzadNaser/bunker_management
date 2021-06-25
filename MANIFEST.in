@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include bunker_management *.css
+recursive-include bunker_management *.csv
+recursive-include bunker_management *.html
+recursive-include bunker_management *.ico
+recursive-include bunker_management *.js
+recursive-include bunker_management *.json
+recursive-include bunker_management *.md
+recursive-include bunker_management *.png
+recursive-include bunker_management *.py
+recursive-include bunker_management *.svg
+recursive-include bunker_management *.txt
+recursive-exclude bunker_management *.pyc
