@@ -1,0 +1,182 @@
+{
+ "actions": [],
+ "autoname": "BNK.####",
+ "creation": "2021-07-19 10:03:43.485860",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "customer",
+  "vessel_name",
+  "delivery_port",
+  "reference_number",
+  "order_no",
+  "quotation",
+  "column_break_5",
+  "bunkering_tank",
+  "date",
+  "issue_date",
+  "delivery_date",
+  "agent",
+  "section_break_10",
+  "remarks",
+  "section_break_12",
+  "items",
+  "printing_setting_section",
+  "letterhead"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "vessel_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Vessel Name",
+   "options": "Vessel",
+   "reqd": 1
+  },
+  {
+   "fieldname": "order_no",
+   "fieldtype": "Link",
+   "label": "Order No",
+   "options": "Sales Order",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bunkering_tank",
+   "fieldtype": "Link",
+   "label": "Bunkering Tank",
+   "options": "Tanker"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "issue_date",
+   "fieldtype": "Date",
+   "label": "Vessel ETA"
+  },
+  {
+   "fieldname": "delivery_date",
+   "fieldtype": "Date",
+   "label": "Vessel ETD"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Cargo Details",
+   "options": "Bunker Cargo",
+   "reqd": 1
+  },
+  {
+   "fieldname": "delivery_port",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Delivery Port",
+   "options": "Port",
+   "reqd": 1
+  },
+  {
+   "fieldname": "reference_number",
+   "fieldtype": "Data",
+   "label": "Customer Reference No"
+  },
+  {
+   "fieldname": "agent",
+   "fieldtype": "Link",
+   "label": "Agent",
+   "options": "Agent"
+  },
+  {
+   "fieldname": "quotation",
+   "fieldtype": "Link",
+   "label": "Quotation",
+   "options": "Quotation"
+  },
+  {
+   "fieldname": "printing_setting_section",
+   "fieldtype": "Section Break",
+   "label": "Printing Setting"
+  },
+  {
+   "fieldname": "letterhead",
+   "fieldtype": "Link",
+   "label": "Letterhead",
+   "options": "Letter Head"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "group": "Sales",
+   "link_doctype": "Quotation",
+   "link_fieldname": "bunker_job"
+  },
+  {
+   "group": "Sales",
+   "link_doctype": "Sales Order",
+   "link_fieldname": "bunker_job"
+  },
+  {
+   "group": "Sales",
+   "link_doctype": "Sales Invoice",
+   "link_fieldname": "bunker_job"
+  },
+  {
+   "group": "Delivery",
+   "link_doctype": "Delivery Note",
+   "link_fieldname": "bunker_job"
+  }
+ ],
+ "modified": "2021-08-23 09:21:08.992884",
+ "modified_by": "Administrator",
+ "module": "Bunker Management",
+ "name": "Bunker Job Master",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

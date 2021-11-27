@@ -33,6 +33,7 @@ app_license = "MIT"
 # page_js = {"page" : "public/js/file.js"}
 
 # include js in doctype views
+doctype_js = {"Quotation":"custom_scripts/quotation.js"}
 # doctype_js = {"doctype" : "public/js/doctype.js"}
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
@@ -98,6 +99,12 @@ app_license = "MIT"
 # 		"on_trash": "method"
 #	}
 # }
+
+doc_events = {
+    "Delivery Note":{
+        "validate":"bunker_management.bunker_management.delivery_note.validate"
+    }
+}
 
 # Scheduled Tasks
 # ---------------
