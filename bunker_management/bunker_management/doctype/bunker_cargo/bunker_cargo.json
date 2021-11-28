@@ -1,0 +1,81 @@
+{
+ "actions": [],
+ "creation": "2021-07-19 10:34:55.871014",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_code",
+  "iso_spec",
+  "qty",
+  "max",
+  "uom",
+  "remarks",
+  "rate",
+  "item_tax_template"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Grade Name",
+   "options": "Item"
+  },
+  {
+   "fieldname": "iso_spec",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "ISO Spec"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Min Qty"
+  },
+  {
+   "fieldname": "max",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Max Qty"
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Uom",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "rate",
+   "fieldtype": "Float",
+   "label": "Rate"
+  },
+  {
+   "fieldname": "item_tax_template",
+   "fieldtype": "Link",
+   "label": "Item VAT",
+   "options": "Item Tax Template"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2021-11-28 11:08:13.632703",
+ "modified_by": "Administrator",
+ "module": "Bunker Management",
+ "name": "Bunker Cargo",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
